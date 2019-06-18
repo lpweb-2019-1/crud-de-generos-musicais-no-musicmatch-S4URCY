@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   constructor(private login$: LoginService, private auth$: AuthService) { }
 
   ngOnInit() {
-    this.login$.login('admin', 'admin123*')
+    this.login$.login('Aquiles', '1234')
       .subscribe(
         data => {
           this.auth$.set(data);
